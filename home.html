@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/styles.css" rel="stylesheet">
+  <style>
+  
+    .why-us-section {
+      background-color: #1c1c1c;
+      color: #fff;
+      padding: 50px;
+    }
+    .contact-section {
+      background-color: #343a40;
+      color: #fff;
+      padding: 50px;
+    }
+    .carousel-item{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .card-img-top{
+        height: 150px !important;
+        width: 300px;
+
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Brand</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#aboutUs">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="loginLink" href="#">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="registerLink" href="register.html">Register</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<!-- I have Used a bootstrap carousel and customized on it by images , , -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="background-image: url('./assets/design-features.jpg');">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Web Development </h5>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </div>
+      </div>
+      <div class="carousel-item" style="background-image: url('./assets/landing-image.png');">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Graphic Design</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div class="carousel-item" style="background-image: url('./assets/landing.jpg');">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Business Analysis</h5>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <div class="container mt-5">
+    
+    <div class="row">
+      <div class="col-md-12 col-lg-8">
+        <div id="aboutUs" class="about-section px-3">
+          <h2 class="">About Us</h2>
+          <p>We are a premier car rental service dedicated to providing high-quality vehicles and exceptional customer service. With a wide range of cars to choose from, we cater to all your travel needs, whether it's for business or leisure.</p>
+        </div>
+
+        <div id="services" class="services-section my-5 px-3">
+          <h2 class="mb-3">Our Services</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-3">
+                <img src="./assets/OIP.jpeg" class="card-img-top w-100" alt="Service 1">
+                <div class="card-body">
+                  <h5 class="card-title">Web Development</h5>
+                  <p class="card-text">Explore our wide range of vehicles suitable for any occasion.</p>
+                  <a href="#" class="btn btn-warning">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-3">
+                <img src="./assets/OIP1.jpeg" class="card-img-top w-100" alt="Service 2">
+                <div class="card-body">
+                  <h5 class="card-title">Graphic Design</h5>
+                  <p class="card-text">Enjoy our competitive rates and flexible rental options.</p>
+                  <a href="#" class="btn btn-warning">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-3">
+                <img src="./assets/OIP2.jpeg" class="card-img-top w-100" alt="Service 3">
+                <div class="card-body">
+                  <h5 class="card-title">Business Analysis </h5>
+                  <p class="card-text">Experience hassle-free booking and 24/7 customer support.</p>
+                  <a href="#" class="btn btn-warning">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12 col-lg-4">
+        <div id="whyUs" class="why-us-section rounded-lg">
+          <h2>Why Us</h2>
+          <p>Choose us for your car rental needs because we offer:</p>
+          <ul>
+            <li>Wide selection of vehicles</li>
+            <li>Competitive pricing</li>
+            <li>Convenient booking options</li>
+            <li>Exceptional customer service</li>
+          </ul>
+        </div>
+
+        <div id="contact" class="contact-section mt-5 rounded-lg">
+          <h2>Contact Us</h2>
+          <p>If you have any questions or need assistance, feel free to reach out to us:</p>
+          <ul>
+            <li>Email: info@yourcompany.com</li>
+            <li>Phone: +1 (123) 456-7890</li>
+            <li>Address: 123 Main Street, City, Country</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center mt-5">
+    <p>&copy; 2024 KETA. All Rights Reserved.</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    // control Links 34an tb2a fol
+    const isLogged = localStorage.getItem("currentUser");
+    if (isLogged) {
+      document.querySelector("#loginLink").textContent = "Log Out";
+      document.querySelector("#registerLink").style.display = 'none';
+    } else {
+      document.querySelector("#loginLink").textContent = "Login";
+      document.querySelector("#registerLink").style.display = 'block';
+    }
+
+    const loginLink = document.querySelector("#loginLink");
+    loginLink?.addEventListener("click", function() {
+      if (loginLink.textContent === "Log Out") {
+        logOut();
+      } else {
+        window.location.href = 'login.html';
+      }
+    });
+
+    // Function to logout user
+    function logOut() {
+      localStorage.removeItem("currentUser");
+      window.location.reload();
+    }
+  </script>
+</body>
+</html>
